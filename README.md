@@ -7,4 +7,10 @@ The code was written in R mainly using species distribution model packages ([BIO
 The data need to be formated in a biomod data format to input to BIOMOD and Ecospat models. This step includes split the data into traning and testing dataset, choose the varibles lists for SDM for each species.
 
 ### Step 2 : Model building - [balanced_models.R, small_models.R and small_models_importance.R]
-Choose the model according to the occurence of the species along the river, balanced spread species
+Choose the model according to the occurence of the species along the river (balanced spread species and unbalanced spread species), Evaluate the SDM and Run variable importance for each SDM.
+
+### Step 3 : Uncertainty analysis - [uncertainty_small_models.R, and uncertanty_balance_models.R]
+Use jack-knife to evaluate the uncertainties, predict the occurrences for each location for all the species using the three modelling techniques (GLMs, GBMs, and RFs), without considering the sampling location.
+
+### Step 4 : Prediction and Mapping
+
