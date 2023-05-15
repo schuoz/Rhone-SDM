@@ -12,5 +12,7 @@ Choose the model according to the occurence of the species along the river (bala
 ### Step 3 : Uncertainty analysis - [uncertainty_small_models.R, and uncertanty_balance_models.R]
 Use jack-knife to evaluate the uncertainties, predict the occurrences for each location for all the species using the three modelling techniques (GLMs, GBMs, and RFs), without considering the sampling location.
 
-### Step 4 : Prediction and Mapping
+### Step 4 : Prediction and Mapping -[balance_prediction.R and small_models_prediction.R]
+Map SDM for both balanced spread and unblanced spread species using qualified model
+
 
